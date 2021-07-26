@@ -1,0 +1,22 @@
+{
+  "name": "doctorappointmentbookingsystem",
+  "version": "1.0.0",
+  "description": "web system for Doctor Appointment Booking",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Doctor",
+    "Appointment",
+    "Booking",
+    "System"
+  ],
+  "author": "Group 2 coventry gctu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
