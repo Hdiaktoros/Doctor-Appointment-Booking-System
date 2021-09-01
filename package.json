@@ -4,7 +4,8 @@
   "description": "web system for Doctor Appointment Booking",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
   },
   "keywords": [
     "Doctor",
@@ -15,13 +16,14 @@
   "author": "Group 2 coventry gctu",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "express": "^4.17.1",
     "nodemon": "^2.0.12"
   }
 }

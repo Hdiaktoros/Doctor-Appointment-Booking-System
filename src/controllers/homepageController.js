@@ -1,4 +1,5 @@
-let getHomepage = (req, res) => {
+
+let getHomepage = (req, res) =>{
     return res.render("homepage.ejs");
 };
 

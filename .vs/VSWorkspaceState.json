@@ -4,7 +4,12 @@
     "\\src",
     "\\src\\config",
     "\\src\\controllers",
+    "\\src\\public",
+    "\\src\\public\\css",
+    "\\src\\public\\images",
+    "\\src\\public\\js",
     "\\src\\views"
   ],
+  "SelectedNode": "\\src\\public\\js\\slick-slide.js",
   "PreviewInSolutionExplorer": false
 }
