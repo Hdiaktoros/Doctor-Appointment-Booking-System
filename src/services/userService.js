@@ -14,4 +14,4 @@ let createNewUser = (user) => {
 
 module.exports = {
 	createdNewUser: createNewUser
-}
+};
