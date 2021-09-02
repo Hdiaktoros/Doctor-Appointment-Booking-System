@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\config",
-    "\\src\\public\\css",
-    "\\src\\public\\images",
-    "\\src\\public\\js"
+    "\\src\\controllers",
+    "\\src\\migrations",
+    "\\src\\models",
+    "\\src\\routes",
+    "\\src\\services",
+    "\\src\\views"
   ],
-  "SelectedNode": "\\src\\config\\connectDB.js",
+  "SelectedNode": "\\src\\server.js",
   "PreviewInSolutionExplorer": false
 }
