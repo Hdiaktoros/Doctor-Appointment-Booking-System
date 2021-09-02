@@ -3,13 +3,10 @@
     "",
     "\\src",
     "\\src\\config",
-    "\\src\\controllers",
-    "\\src\\public",
     "\\src\\public\\css",
     "\\src\\public\\images",
-    "\\src\\public\\js",
-    "\\src\\views"
+    "\\src\\public\\js"
   ],
-  "SelectedNode": "\\src\\public\\js\\slick-slide.js",
+  "SelectedNode": "\\src\\config\\connectDB.js",
   "PreviewInSolutionExplorer": false
 }
