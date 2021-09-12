@@ -12,7 +12,7 @@ let createNewUser = async (req, res) => {
     let message = await userService.createNewUser(user);
     console.log(message);
     return res.redirect("/")
-}
+};
 module.exports = {
     getHomepage: getHomepage,
     getNewUserPage: getNewUserPage,
