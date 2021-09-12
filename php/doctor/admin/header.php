@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Doctor Appointment Management System in PHP</title>
+    <title>Xpert Health</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,8 +44,8 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     
                 </div>
-                <i class="fas fa-laugh-wink"></i>
-                <div class="sidebar-brand-text mx-3">Admin</div>
+                <i class="fas fa-hospital"></i>
+                <div class="sidebar-brand-text mx-3">Xpert Health</div>
             </a>
 
             <!-- Divider -->
