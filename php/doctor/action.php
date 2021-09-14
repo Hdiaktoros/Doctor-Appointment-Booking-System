@@ -75,7 +75,7 @@ if(isset($_POST["action"]))
 			$mail->SMTPAuth = true;
 			$mail->Username = '3e52ca892214a4';
 			$mail->Password = 'ce01d5447ac4f8';
-			$mail->SMTPSecure = '';
+			$mail->SMTPSecure = 'ssl';
 			$mail->From = '';
 			$mail->FromName = 'Xpert Health';
 			$mail->AddAddress($_POST["patient_email_address"]);

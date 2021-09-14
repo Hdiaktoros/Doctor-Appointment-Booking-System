@@ -39,7 +39,7 @@
 		   	}
 		    else{
 		        ?>
-            <div class="col text-right"><a href="dashboard.php">Dashboard</a></div>
+            <div class="col text-right"><a href="client/dashboard.php">Dashboard</a></div>
         <?php
             }
 		   	?>
@@ -47,7 +47,7 @@
 	    </div>
 
 	    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-	      	<h1 class="display-4">Xpert Booking System</h1>
+	      	<h1 class="display-4">Xpert Health</h1>
 	    </div>
 	    <br />
 	    <br />
