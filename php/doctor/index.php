@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Xpert Health - Login</title>
+    <title>Xpert Health - Home</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reg.css"/>
+
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57"><nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
@@ -56,15 +60,52 @@
 		</div>
 				</header>
     <section id="about" class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col offset-lg-8 text-center mx-auto">
-                    <h2 class="text-white section-heading">We've got what you need!</h2>
-                    <hr class="light my-4">
-                    <p class="text-faded mb-4">Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes are open source, free to download, and easy to use. No strings attached!</p><a class="btn btn-light btn-xl" role="button" href="#services">Get Started!</a>
+
+            <div class="slide">
+                <div class="my-slick-slide">
+                    <div class="div-slide">
+                        <div class="image-slide" >
+                            <img class="image-slide" src="img/Heart.jpg" >
+                        </div>
+                        <div class="div-title">
+                            <span>Heart</span>
+                        </div>
+                    </div>
+                    <div class="div-slide">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Nerve.jpg" >
+                        </div>
+                        <div class="div-title">
+                            <span>Nerve</span>
+                        </div>
+                    </div>
+                    <div class="div-slide">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/digest.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Digest</span>
+                        </div>
+                    </div>
+                    <div class="div-slide">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Traditional.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Traditional medicine</span>
+                        </div>
+                    </div>
+                    <div class="div-slide">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/acupuncture.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Acupuncture</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
     </section>
     <section id="services">
         <div class="container">
@@ -182,9 +223,19 @@
             </div>
         </div>
     </section>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slide').slick({
+            setting-name: setting-value
+    });
+    });
+</script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 

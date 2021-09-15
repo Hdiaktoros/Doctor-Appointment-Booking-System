@@ -1,0 +1,73 @@
+.popular-specialty .slide, .hospital-and-clinic .slide, .doctors .slide, .handbook .slide {
+    height: 300px; }
+.popular-specialty .slide .my-slick-slide, .hospital-and-clinic .slide .my-slick-slide, .doctors .slide .my-slick-slide, .handbook .slide .my-slick-slide {
+    height: 100%;
+    width: 100%; }
+.popular-specialty .slide .my-slick-slide .div-slide, .hospital-and-clinic .slide .my-slick-slide .div-slide, .doctors .slide .my-slick-slide .div-slide, .handbook .slide .my-slick-slide .div-slide {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px; }
+.popular-specialty .slide .my-slick-slide .div-slide .image-slide, .hospital-and-clinic .slide .my-slick-slide .div-slide .image-slide, .doctors .slide .my-slick-slide .div-slide .image-slide, .handbook .slide .my-slick-slide .div-slide .image-slide {
+    height: 200px;
+    width: 267px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 325px 200px;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .div-title, .hospital-and-clinic .slide .my-slick-slide .div-slide .div-title, .doctors .slide .my-slick-slide .div-slide .div-title, .handbook .slide .my-slick-slide .div-slide .div-title {
+    background-color: #f5efef; }
+.popular-specialty .slide .my-slick-slide .div-slide .div-title span, .hospital-and-clinic .slide .my-slick-slide .div-slide .div-title span, .doctors .slide .my-slick-slide .div-slide .div-title span, .handbook .slide .my-slick-slide .div-slide .div-title span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px; }
+.popular-specialty .slide .arrow-left, .hospital-and-clinic .slide .arrow-left, .doctors .slide .arrow-left, .handbook .slide .arrow-left {
+    border: 1px solid #ccc;
+    font-size: 30px;
+    padding: 15px;
+    color: #ccc;
+    position: absolute;
+    bottom: 50%;
+    left: -15px;
+    background-color: white;
+    z-index: 1000;
+    cursor: pointer; }
+.popular-specialty .slide .arrow-right, .hospital-and-clinic .slide .arrow-right, .doctors .slide .arrow-right, .handbook .slide .arrow-right {
+    border: 1px solid #ccc;
+    font-size: 30px;
+    padding: 15px;
+    color: #ccc;
+    position: absolute;
+    bottom: 50%;
+    right: -15px;
+    background-color: white;
+    cursor: pointer; }
+
+.doctors .slide .my-slick-slide .div-slide {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    margin-right: 10px;
+    cursor: pointer; }
+.doctors .slide .my-slick-slide .div-slide:hover {
+    background-color: #f1ee90; }
+.doctors .slide .my-slick-slide .div-slide img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 10px 0; }
+.doctors .slide .my-slick-slide .div-slide .info-doctor {
+    text-align: center; }
+.doctors .slide .my-slick-slide .div-slide .info-doctor .name {
+    display: block;
+    font-weight: 600;
+    padding-top: 5px; }
+.doctors .slide .my-slick-slide .div-slide .info-doctor .speciality {
+    display: block;
+    padding-top: 5px; }
+.doctors .slide .my-slick-slide .div-slide .count-booking {
+    text-align: center;
+    color: #59c1a9;
+    margin-top: 30px;
+    margin-bottom: 5px; }
