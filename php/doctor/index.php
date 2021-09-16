@@ -25,8 +25,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#special">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <?php
@@ -59,43 +59,109 @@
 			<p> A wide range of Doctors, Physicians and more at your call </p>
 		</div>
 				</header>
-    <section id="about" class="bg-primary">
-
-            <div class="slide">
-                <div class="my-slick-slide">
-                    <div class="div-slide">
-                        <div class="image-slide" >
-                            <img class="image-slide" src="img/Heart.jpg" >
-                        </div>
-                        <div class="div-title">
-                            <span>Heart</span>
-                        </div>
-                    </div>
-                    <div class="div-slide">
+<section id="special"class="popular-specialty" class="bg-primary" style="background: rgb(250,250,250);
+background: radial-gradient(circle, rgba(250,250,250,1) 46%, rgba(45,253,233,0.2329306722689075) 100%);
+">
+    <div class="title-section">
+        <span class="span-title">Popular specialty</span>
+        <div class="btn-view ">
+            <a class="" href="/"> <span>ALL SPECIALITY </span></a>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="my-slick-slide slick-initialized slick-slider" style="user-select: auto;"><i class="fas fa-chevron-left arrow-left slick-arrow" style=""></i>
+            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4676px; transform: translate3d(-1336px, 0px, 0px);"><div class="div-slide slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
                         <div class="image-slide">
-                            <img class="image-slide" src="img/Nerve.jpg" >
+                            <img class="image-slide" src="img/Nerve.jpg">
                         </div>
                         <div class="div-title">
                             <span>Nerve</span>
                         </div>
-                    </div>
-                    <div class="div-slide">
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
                         <div class="image-slide">
                             <img class="image-slide" src="img/digest.jpg">
                         </div>
                         <div class="div-title">
                             <span>Digest</span>
                         </div>
-                    </div>
-                    <div class="div-slide">
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
                         <div class="image-slide">
                             <img class="image-slide" src="img/Traditional.jpg">
                         </div>
                         <div class="div-title">
                             <span>Traditional medicine</span>
                         </div>
-                    </div>
-                    <div class="div-slide">
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/acupuncture.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Acupuncture</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 324px;" tabindex="0">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Heart.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Heart</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 324px;" tabindex="0">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Nerve.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Nerve</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 324px;" tabindex="0">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/digest.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Digest</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 324px;" tabindex="0">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Traditional.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Traditional medicine</span>
+                        </div>
+                    </div><div class="div-slide slick-slide" data-slick-index="4" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/acupuncture.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Acupuncture</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Heart.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Heart</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Nerve.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Nerve</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/digest.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Digest</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
+                        <div class="image-slide">
+                            <img class="image-slide" src="img/Traditional.jpg">
+                        </div>
+                        <div class="div-title">
+                            <span>Traditional medicine</span>
+                        </div>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
                         <div class="image-slide">
                             <img class="image-slide" src="img/acupuncture.jpg">
                         </div>
@@ -105,8 +171,121 @@
                     </div>
                 </div>
             </div>
+            <i class="fas fa-chevron-right arrow-right slick-arrow" style=""></i></div>
+    </div>
+</section>
 
-    </section>
+<section id="doctors" class="doctors" style="background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+">
+    <div class="slide">
+        <div class="my-slick-slide slick-initialized slick-slider" style="user-select: auto;"><i class="fas fa-chevron-left arrow-left slick-arrow" style=""></i>
+            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4676px; transform: translate3d(-1336px, 0px, 0px);"><div class="div-slide slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../img/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 314px;" tabindex="0">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 314px;" tabindex="0">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 314px;" tabindex="0">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 314px;" tabindex="0">
+                        <img src="../img/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide" data-slick-index="4" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
+                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
+                        <div class="info-doctor">
+                            <span class="name">Dr. Hary Pham</span>
+                            <span class="speciality">Nerve</span>
+                        </div>
+                        <span class="count-booking">1.000 bookings</span>
+                    </div></div></div>
+
+
+
+
+            <i class="fas fa-chevron-right arrow-right slick-arrow" style=""></i></div>
+    </div>
+</section>
     <section id="services">
         <div class="container">
             <div class="row">
