@@ -1,11 +1,12 @@
-
-<!DOCTYPE html>
-<html lang="en">
 <?php
 //login.php
 include('class/Appointment.php');
+
 $object = new Appointment;
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -44,7 +45,6 @@ $object = new Appointment;
                 }
                 else{
                 ?>
-
                 <li class="nav-item"><a class="nav-link" href="client/dashboard.php">Dashboard</a></li>
                     <?php
                 }
@@ -67,7 +67,14 @@ $object = new Appointment;
             <br>
             <br>
             <br>
-						<span id="message"></span>
+            <?php
+            if(isset($_SESSION["success_message"]))
+            {
+                echo $_SESSION["success_message"];
+                unset($_SESSION["success_message"]);
+            }
+            ?>
+            <span id="message"></span>
 			<div class="card">
 				<div class="card-header" style="padding:.5rem 9.5rem;">Login</div>
 				<div class="card-body">
@@ -81,8 +88,8 @@ $object = new Appointment;
 							<input type="password" name="patient_password" id="patient_password" class="form-control" required="" data-parsley-trigger="keyup">
 						</div>
 						<div class="form-group text-center">
-							<input type="hidden" name="action" value="patient_login">
-							<input type="submit" name="patient_login_button" id="patient_login_button" class="btn btn-primary" value="Login" style="user-select: auto;">
+							<input type="hidden" name="action" value="patient_login" />
+							<input type="submit" name="patient_login_button" id="patient_login_button" class="btn btn-primary" value="Login" style="user-select: auto;" />
 						</div>
 						<div class="form-group text-center">
 							<p><a href="register.php">Register</a></p>
@@ -94,44 +101,65 @@ $object = new Appointment;
 	</div>
 </div>
     </header>
+   <!-- Bootstrap core JavaScript-->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!-- Core plugin JavaScript-->
+   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="vendor/parsley/dist/parsley.min.js"></script>
+   <script type="text/javascript" src="vendor/datepicker/bootstrap-datepicker.js"></script>
+   <!-- Page level plugins -->
+   <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+   <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+   <script src="assets/js/script.min.js"></script>
     <script>
-$(document).ready(function(){
-	$('#patient_login_form').parsley();
-	$('#patient_login_form').on('submit', function(event){
-		event.preventDefault();
-		if($('#patient_login_form').parsley().isValid())
-		{
-			$.ajax({
-				url:"action.php",
-				method:"POST",
-				data:$(this).serialize(),
-				dataType:"json",
-				beforeSend:function()
-				{
-					$('#patient_login_button').attr('disabled', 'disabled');
-				},
-				success:function(data)
-				{
-					$('#patient_login_button').attr('disabled', false);
 
-					if(data.error != '')
-					{
-						$('#message').html(data.error);
-					}
-					else
-					{
-						window.location.href="client/dashboard.php";
-					}
-				}
-			});
-		}
-	});
-});
-</script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+       $(document).ready(function(){
+
+           $('#patient_login_form').parsley();
+
+           $('#patient_login_form').on('submit', function(event){
+
+               event.preventDefault();
+
+               if($('#patient_login_form').parsley().isValid())
+               {
+                   $.ajax({
+
+                       url:"action.php",
+                       method:"POST",
+                       data:$(this).serialize(),
+                       dataType:"json",
+                       beforeSend:function()
+                       {
+                           $('#patient_login_button').attr('disabled', 'disabled');
+                       },
+                       success:function(data)
+                       {
+                           $('#patient_login_button').attr('disabled', false);
+
+                           if(data.error !== '')
+                           {
+                               $('#message').html(data.error);
+                           }
+                           else
+                           {
+                               window.location.href="client/dashboard.php";
+                           }
+                       }
+                   });
+               }
+
+           });
+
+       });
+
+
+
+   </script>
 </body>
 
 </html>

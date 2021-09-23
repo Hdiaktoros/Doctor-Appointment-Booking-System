@@ -127,47 +127,57 @@
             </div>
         </div>
     </div>
-			<script>
-$(document).ready(function(){
-	$('#patient_date_of_birth').datepicker({
-        format: "yyyy-mm-dd",
-        autoclose: true
-    });
-	$('#patient_register_form').parsley();
-	$('#patient_register_form').on('submit', function(event){
-		event.preventDefault();
-		if($('#patient_register_form').parsley().isValid())
-		{
-			$.ajax({
-				url:"action.php",
-				method:"POST",
-				data:$(this).serialize(),
-				dataType:'json',
-				beforeSend:function(){
-					$('#patient_register_button').attr('disabled', 'disabled');
-				},
-				success:function(data)
-				{
-					$('#patient_register_button').attr('disabled', false);
-					$('#patient_register_form')[0].reset();
-					if(data.error !== '')
-					{
-						$('#message').html(data.error);
-					}
-					if(data.success != '')
-					{
-						$('#message').html(data.success);
-					}
-				}
-			});
-		}
-	});
-});
-</script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="vendor/parsley/dist/parsley.min.js"></script>
+    <script type="text/javascript" src="vendor/datepicker/bootstrap-datepicker.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#patient_date_of_birth').datepicker({
+                format: "yyyy-mm-dd",
+                autoclose: true
+            });
+            $('#patient_register_form').parsley();
+            $('#patient_register_form').on('submit', function(event){
+                event.preventDefault();
+                if($('#patient_register_form').parsley().isValid())
+                {
+                    $.ajax({
+                        url:"action.php",
+                        method:"POST",
+                        data:$(this).serialize(),
+                        dataType:'json',
+                        beforeSend:function(){
+                            $('#patient_register_button').attr('disabled', 'disabled');
+                        },
+                        success:function(data)
+                        {
+                            $('#patient_register_button').attr('disabled', false);
+                            $('#patient_register_form')[0].reset();
+                            if(data.error !== '')
+                            {
+                                $('#message').html(data.error);
+                            }
+                            if(data.success != '')
+                            {
+                                $('#message').html(data.success);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

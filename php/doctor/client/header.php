@@ -22,16 +22,13 @@
 
     <!-- Custom styles for this page -->
     <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="../vendor/parsley/parsley.css"/>
-
     <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-select/bootstrap-select.min.css"/>
-
     <link rel="stylesheet" type="text/css" href="../vendor/datepicker/bootstrap-datepicker.css"/>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" >
 
 <!-- Page Wrapper -->
 <div id="wrapper">
@@ -100,6 +97,12 @@
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.php#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.php#contact">Contact</a></li>
+
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -141,7 +144,7 @@
                                     Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../logout.php" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="logout.php" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -154,4 +157,4 @@
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
+            <div class="container-fluid" >

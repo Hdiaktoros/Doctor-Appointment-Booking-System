@@ -131,6 +131,11 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.php#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php#contact">Contact</a></li>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -170,7 +175,6 @@
                             }
                         }
 
-                        
                         ?>
 
                         <!-- Nav Item - User Information -->

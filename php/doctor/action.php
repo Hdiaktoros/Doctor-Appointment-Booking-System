@@ -8,11 +8,11 @@ $object = new Appointment;
 
 if(isset($_POST["action"]))
 {
-	if($_POST["action"] == 'check_login')
+	if($_POST["action"] === 'check_login')
 	{
 		if(isset($_SESSION['patient_id']))
 		{
-			echo 'dashboard.php';
+			echo 'client/dashboard.php';
 		}
 		else
 		{
@@ -70,13 +70,13 @@ if(isset($_POST["action"]))
 			require 'class/class.phpmailer.php';
 			$mail = new PHPMailer;
 			$mail->IsSMTP();
-			$mail->Host = 'smtp.mailtrap.io';
-			$mail->Port = '2525';
+			$mail->Host = 'smtp.gmail.com';
+			$mail->Port = '587';
 			$mail->SMTPAuth = true;
-			$mail->Username = '3e52ca892214a4';
-			$mail->Password = 'ce01d5447ac4f8';
-			$mail->SMTPSecure = 'ssl';
-			$mail->From = '';
+			$mail->Username = 'tadisdoctor@gmail.com';
+			$mail->Password = 'H@diaktoros12345';
+			$mail->SMTPSecure = 'tls';
+			$mail->From = 'tadisdoctor@gmail.com';
 			$mail->FromName = 'Xpert Health';
 			$mail->AddAddress($_POST["patient_email_address"]);
 			$mail->WordWrap = 50;
@@ -107,7 +107,7 @@ if(isset($_POST["action"]))
 		echo json_encode($output);
 	}
 
-	if($_POST['action'] == 'patient_login')
+	if($_POST['action'] === 'patient_login')
 	{
 		$error = '';
 
