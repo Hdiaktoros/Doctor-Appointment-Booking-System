@@ -93,6 +93,7 @@ $object = new Appointment;
 						</div>
 						<div class="form-group text-center">
 							<p><a href="register.php">Register</a></p>
+                            <p>Are you an Admin or Doctor?<a href="admin/index.php"><br>login</a></p>
 						</div>
 					</form>
 				</div>

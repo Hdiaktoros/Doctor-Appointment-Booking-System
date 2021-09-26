@@ -8,33 +8,32 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/reg.css"/>
-
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57"><nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container"><a class="navbar-brand" href="index.php#page-top">Xpert health</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+    <div class="container"><a class="navbar-brand" href="#page-top">Xpert health</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#special">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Specialties">Specialties</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Doctors">Doctors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Hospital">Hospital</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <?php
 		    if(!isset($_SESSION['patient_id']))
 		    {
 		    ?>
                 <li class="nav-item"><a class="nav-link" href="login.php">login</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.php" style="transform: skew(0deg);">register</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
                 <?php
                 }
                 else
@@ -47,7 +46,7 @@
             </ul>
         </div>
     </div>
-</nav><header id="home"class="text-center text-white d-flex masthead" style="background-image:url('assets/img/header.jpg');">
+</nav><header id="home"class="text-center text-white d-flex masthead" style="background-image:url('assets/img/header.jpg'); padding: 1.5rem 0.2rem;">
 <div class="content">
 			<h1> Book for Consulting <br> today and get a kit </h1>
 			<div class="search-box">
@@ -58,234 +57,126 @@
 			</div>
 			<p> A wide range of Doctors, Physicians and more at your call </p>
 		</div>
-				</header>
-<section id="special"class="popular-specialty" class="bg-primary" style="background: rgb(250,250,250);
-background: radial-gradient(circle, rgba(250,250,250,1) 46%, rgba(45,253,233,0.2329306722689075) 100%);
-">
-    <div class="title-section">
-        <span class="span-title">Popular specialty</span>
-        <div class="btn-view ">
-            <a class="" href="/"> <span>ALL SPECIALITY </span></a>
+</header>
+    <section id="Specialties" class="p-0 bg-dark text-white">
+        <div class="container-fluid p-0">
+            <div class="row g-0 popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/1.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/1.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><br><strong>Immunologists</strong><br><br></span></div>
+                                <div class="project-name"><span><br>They treat immune system disorders such as asthma, eczema, food allergies, insect sting allergies, and some autoimmune diseases.<br></span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/2.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/2.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Anesthesiologists</strong></span></div>
+                                <div class="project-name"><span>These doctors give you drugs to numb your pain or to put you under during surgery, childbirth, or other procedures.&nbsp;</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/3.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/3.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Cardiologists</strong></span></div>
+                                <div class="project-name"><span><br><br>They’re experts on the heart and blood vessels. </span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/4.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/4.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Colon and Rectal Surgeons</strong></span></div>
+                                <div class="project-name"><span>You would see these doctors for problems with your small intestine, colon, and bottom.</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/5.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/5.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Critical Care Medicine Specialists</strong></span></div>
+                                <div class="project-name"><span>They care for people who are critically ill or injured, often heading intensive care units in hospitals.</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Specialties/fullsize/6.jpg"><img class="img-fluid" src="assets/img/Specialties/thumbnails/6.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Endocrinologists</strong></span></div>
+                                <div class="project-name"><span>These are experts on hormones and metabolism. They can treat conditions like diabetes, thyroid problems, infertility, and calcium and bone disorders.</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="my-slick-slide slick-initialized slick-slider" style="user-select: auto;"><i class="fas fa-chevron-left arrow-left slick-arrow" style=""></i>
-            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4676px; transform: translate3d(-1336px, 0px, 0px);"><div class="div-slide slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Nerve.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Nerve</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/digest.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Digest</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Traditional.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Traditional medicine</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/acupuncture.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Acupuncture</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 324px;" tabindex="0">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Heart.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Heart</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 324px;" tabindex="0">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Nerve.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Nerve</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 324px;" tabindex="0">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/digest.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Digest</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 324px;" tabindex="0">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Traditional.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Traditional medicine</span>
-                        </div>
-                    </div><div class="div-slide slick-slide" data-slick-index="4" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/acupuncture.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Acupuncture</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Heart.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Heart</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Nerve.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Nerve</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/digest.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Digest</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/Traditional.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Traditional medicine</span>
-                        </div>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 324px;" tabindex="-1">
-                        <div class="image-slide">
-                            <img class="image-slide" src="img/acupuncture.jpg">
-                        </div>
-                        <div class="div-title">
-                            <span>Acupuncture</span>
-                        </div>
-                    </div>
+    </section>
+    <section id="about" class="text-nowrap text-center bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-lg-8 text-center mx-auto">
+                    <h2 class="text-white section-heading">We've got what you need!</h2>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">Our physicians take a detailed and personalized approach to patient care. For over 25 years, we have been providing comprehensive heart health care to the Capital Region.<br>book an appointment with a&nbsp;specialist. we promise, we will not disappoint.<br></p><a class="btn btn-light btn-xl" role="button" href="register.php">Get Started!</a>
                 </div>
             </div>
-            <i class="fas fa-chevron-right arrow-right slick-arrow" style=""></i></div>
-    </div>
-</section>
-
-<section id="doctors" class="doctors" style="background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-">
-    <div class="slide">
-        <div class="my-slick-slide slick-initialized slick-slider" style="user-select: auto;"><i class="fas fa-chevron-left arrow-left slick-arrow" style=""></i>
-            <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4676px; transform: translate3d(-1336px, 0px, 0px);"><div class="div-slide slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+        </div>
+    </section>
+    <section id="Doctors" class="p-0 bg-dark text-white">
+        <div class="container-fluid p-0">
+            <div class="row g-0 popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/1.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/1.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Nita Ahuja</strong></span></div>
+                                <div class="project-name"><span>Surgery</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/2.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/2.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Catherine Alonzo</strong></span></div>
+                                <div class="project-name"><span>Urology</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../img/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/3.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/3.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Joachim Baehring</strong></span></div>
+                                <div class="project-name"><span>Neurology</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/4.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/4.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Richard Antaya</strong></span></div>
+                                <div class="project-name"><span>Dermatology</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 314px;" tabindex="0">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/5.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/5.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>PAUL BERNSTEIN</strong></span></div>
+                                <div class="project-name"><span>Nephrology</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 314px;" tabindex="0">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Doctors/fullsize/6.jpg"><img class="img-fluid" src="assets/img/Doctors/thumbnails/6.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span><strong>Robert Bona</strong></span></div>
+                                <div class="project-name"><span>Hematology</span></div>
+                            </div>
                         </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 314px;" tabindex="0">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 314px;" tabindex="0">
-                        <img src="../img/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide" data-slick-index="4" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div><div class="div-slide slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 314px;" tabindex="-1">
-                        <img src="../images/speciality/speciality1.jpg" alt="image-doctors">
-                        <div class="info-doctor">
-                            <span class="name">Dr. Hary Pham</span>
-                            <span class="speciality">Nerve</span>
-                        </div>
-                        <span class="count-booking">1.000 bookings</span>
-                    </div></div></div>
-
-
-
-
-            <i class="fas fa-chevron-right arrow-right slick-arrow" style=""></i></div>
-    </div>
-</section>
+                    </a></div>
+            </div>
+        </div>
+    </section>
     <section id="services">
         <div class="container">
             <div class="row">
@@ -299,122 +190,107 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center">
                     <div class="mx-auto service-box mt-5"><i class="fa fa-diamond fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-once="true"></i>
-                        <h3 class="mb-3">Sturdy Templates</h3>
-                        <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+                        <h3 class="mb-3">Premium Experience</h3>
+                        <p class="text-muted mb-0">We have experienced consultants &amp; personnel ready to offer the most accurate information &amp; services</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center">
                     <div class="mx-auto service-box mt-5"><i class="fa fa-paper-plane fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="200" data-aos-once="true"></i>
-                        <h3 class="mb-3">Ready to Ship</h3>
-                        <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+                        <h3 class="mb-3">Always Available</h3>
+                        <p class="text-muted mb-0">If you Send us a message We will Always respond 24/7</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center">
                     <div class="mx-auto service-box mt-5"><i class="fa fa-newspaper-o fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="400" data-aos-once="true"></i>
                         <h3 class="mb-3">Up to Date</h3>
-                        <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+                        <p class="text-muted mb-0">We give you updates on the current health situations around the world &amp; health updates on our platform.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center">
                     <div class="mx-auto service-box mt-5"><i class="fa fa-heart fa-4x text-primary mb-3 sr-icons" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true"></i>
-                        <h3 class="mb-3">Made with Love</h3>
-                        <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+                        <h3 class="mb-3">We Care</h3>
+                        <p class="text-muted mb-0">Your experience will be the best because your health is of top priority to us.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="portfolio" class="p-0">
+    <section id="Hospital" class="p-0 bg-dark text-white">
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/1.jpg"><img class="img-fluid" src="assets/img/thumbnails/1.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Hospital/fullsize/1.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/1.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>the john hopkins hospital</strong></span></div>
+                                <div class="project-name"><span>The Johns Hopkins Hospital is a world renowned leader in patient care, serving the greater Baltimore community and patients from all across the globe.</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/2.jpg"><img class="img-fluid" src="assets/img/thumbnails/2.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Hospital/fullsize/2.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/2.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>Mayo Clinic</strong></span></div>
+                                <div class="project-name"><span>The Rochester, Minnesota–based Mayo Clinic has provided patients with comprehensive medical care for over 150 years.</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/3.jpg"><img class="img-fluid" src="assets/img/thumbnails/3.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Hospital/fullsize/3.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/3.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>Cleveland Clinic</strong></span></div>
+                                <div class="project-name"><span>it was the first major medical center to organize with patient-center institutes to combine clinical services around a single disease or organ system.</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/4.jpg"><img class="img-fluid" src="assets/img/thumbnails/4.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="Hospital/fullsize/4.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/4.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>Singapore General Hospital</strong></span></div>
+                                <div class="project-name"><span>The oldest hospital in Singapore, founded in 1821, has grown from a British imperial troop cantonment near the banks of the Singapore River</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/5.jpg"><img class="img-fluid" src="assets/img/thumbnails/5.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Hospital/fullsize/5.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/5.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>University of Tokyo Hospital</strong></span></div>
+                                <div class="project-name"><span>Japan's vital medical hub has advanced both medical research and practice, while educating the top doctors and researchers in the country.</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/6.jpg"><img class="img-fluid" src="assets/img/thumbnails/6.jpg">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/Hospital/fullsize/6.jpg"><img class="img-fluid" src="assets/img/Hospital/thumbnails/6.jpg">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Category</span></div>
-                                <div class="project-name"><span>Project Name</span></div>
+                                <div class="project-category text-faded"><span><strong>st. vincent medical center</strong></span></div>
+                                <div class="project-name"><span>Verity Health System entered into an agreement with the State of California on 20/03/ 2020, to give the State access to the closed hospital as part of the State's preparations to care for patients impacted by COVID-19.</span></div>
                             </div>
                         </div>
                     </a></div>
             </div>
         </div>
     </section>
-    <section class="text-white bg-dark">
-        <div class="container text-center">
-            <h2 class="mb-4">Lorem Ipsum!</h2><a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="#">Download Now!</a>
-        </div>
-    </section>
-    <section id="contact">
+    <section id="contact" class="text-break">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center mx-auto">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="my-4">
-                    <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p class="mb-5">Give us a call or send us an email and we will get back to you as soon as possible!. Hospitals should also send us an Email if interested in our Platform</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 text-center ms-auto"><i class="fa fa-phone fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
                     <p>123-456-6789</p>
                 </div>
-                <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
-                    <p><a href="mailto:your-email@your-domain.com">email@example.com</a></p>
+                <div class="col-lg-4 text-center me-auto"><i class="icon ion-email fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
+                    <p><a href="mailto:Admin@xperthealth.com">Admin@xperthealth.com</a></p>
                 </div>
             </div>
         </div>
     </section>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.slide').slick({
-            setting-name: setting-value
-    });
-    });
-</script>
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
